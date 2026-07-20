@@ -131,23 +131,14 @@ FONDO MÁGICO (CORREGIDO)
         url("hero.png");
        
 
+    
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center center;
 
 }
 
-.overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        to bottom,
-        rgba(11, 19, 43, 0.45),   /* Azul profundo con transparencia */
-        rgba(58, 80, 107, 0.30),   /* Azul mágico intermedio */
-        
-    );
-    backdrop-filter: blur(2px); /* Un toque más de desenfoque para dar misterio */
-}
+
 
 .hero-content{
 
