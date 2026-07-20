@@ -1,3 +1,26 @@
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,
+body{
+    width:100%;
+    overflow-x:hidden;
+}
+
+body{
+    margin:0;
+    font-family: Georgia, serif;
+    background:#07060d;
+    color:#f5e9d8;
+    scroll-behavior:smooth;
+}
+
+
 /*======================================================
 1. VARIABLES
 ======================================================*/
@@ -27,13 +50,6 @@
 }
 
 
-body{
-    margin:0;
-    font-family: Georgia, serif;
-    background:#07060d;
-    color:#f5e9d8;
-    scroll-behavior:smooth;
-}
 
 /* ======================================================
 FONDO MÁGICO (CORREGIDO)
@@ -113,8 +129,11 @@ FONDO MÁGICO (CORREGIDO)
             rgba(28, 37, 65, 0.88)
         ),
         url("hero.png");
-         background-size: cover;
-    background-position: center;
+       
+
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center center;
 
 }
 
