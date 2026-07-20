@@ -62,27 +62,31 @@ actualizarContador();
 
 setInterval(actualizarContador,1000);
 
-
 const music = document.getElementById("bg-music");
 const btn = document.getElementById("music-btn");
 
-
 btn.addEventListener("click", () => {
 
+    if (music.paused) {
 
-    if(music.paused){
+        music.play()
+        .then(() => {
+            btn.innerHTML = "🔊";
+            btn.classList.add("playing");
+        })
+        .catch(error => {
+            console.log("Error al reproducir música:", error);
+        });
 
-        music.play();
-
-        btn.innerHTML="🔊";
-
-    }else{
+    } else {
 
         music.pause();
 
-        btn.innerHTML="🎵";
+        btn.innerHTML = "🎵";
+        btn.classList.remove("playing");
 
     }
 
-
 });
+
+
